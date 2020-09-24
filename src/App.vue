@@ -26,8 +26,13 @@ h1, h2 { margin: 0;}
 
 .container {
   margin: 0 auto;
-  padding: 0 10px;
   width: 90%;
   max-width: 1820px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 97%;
+  }
 }
 </style>

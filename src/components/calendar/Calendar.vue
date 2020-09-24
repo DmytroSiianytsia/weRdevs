@@ -105,7 +105,8 @@ export default {
   .calendar {
     position: relative;
     margin: 0 auto;
-    width: 467px;
+    width: 100%;
+    max-width: 467px;
     height: 490px;
     box-sizing: border-box;
 
@@ -197,5 +198,12 @@ export default {
   }
   .active {
     opacity: 1;
+  }
+
+  @media (max-width: 576px) {
+    .calendar__dates {
+      width: 30px;
+      height: 40px;
+    }
   }
 </style>

@@ -91,6 +91,14 @@
 
     .nav__link {
       font-size: 20px;
+      margin-left: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .nav__link {
+      font-size: 18px;
+      margin-left: 20px;
     }
   }
 </style>

@@ -75,7 +75,8 @@ export default {
 
 .calendar-section {
   width: 40%;
-  padding: 192px 50px 0 122px;
+  box-sizing: border-box;
+  padding: 192px 20px 0;
   background: #272829;
 }
 
@@ -89,15 +90,18 @@ export default {
 
     &__content {
       margin: 50px auto;
+      padding-right: 0;
       width: 100%;
       align-items: center;
     }
 
     &__title {
+      width: 400px;
       font-size: 36px;
     }
 
     &__text {
+      width: 400px;
       font-size: 24px;
     }
   }
@@ -105,6 +109,18 @@ export default {
   .calendar-section {
     width: 100%;
     padding: 50px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home__title {
+    width: 320px;
+    font-size: 30px;
+  }
+
+  .home__text {
+    width: 300px;
+    font-size: 22px;
   }
 }
 </style>
